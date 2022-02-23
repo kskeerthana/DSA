@@ -16,16 +16,16 @@ for s in sample:
     # 
     #         print(sample_list)    
 
-    if s == '(':
+    if s is '(':
         sundera =""
         start_tracking = True
-    elif s == ')':
+    elif s is ')':
         start_tracking = False
         # print(sundera)
         sample_list.append(sundera)
     
     elif(start_tracking):
-        sundera = sundera+' '+s
+        sundera = sundera+s
 
 for s in sample_list:
     print(s)

@@ -70,23 +70,30 @@ class LinkedList:
 
 	def del_node(self,value):
 		length = self.get_count()
-		head = self.head
-		if length == 0:
-			print('list is empty')
+		# head = self.head
+		# if length == 0:
+		# 	print('list is empty')
+		# else:
+		# 	if(head is not None):
+		# 		if(head.data == value):
+		# 			self.head = self.head.next
+		# 			length -= 1
+		# 	while(head is not None):
+		# 		if (head.data == value):
+		# 			break
+		# 		temp = head
+		# 		head = temp.next
+		# 	temp.next = head.next
+		# 	head = None	  	
+		if value == None:
+			return
 		else:
-			if(head is not None):
-				if(head.data == value):
-					self.head = self.head.next
-					length -= 1
-			while(head is not None):
-				if (head.data == value):
-					break
-				temp = head
-				head = temp.next
-			temp.next = head.next
-			head = None	
-			# else:
-			# 	if  	
+			while value.next is not None:
+				temp = value
+				value.data = temp.next.data
+				# value.next = temp.next.next
+				value = value.next	
+			temp.next = None			
 		self.traversal()		
 
 
@@ -97,6 +104,7 @@ link2 = Node(12)
 link3 = Node(18)
 link4 = Node(24)
 link5 = Node(30)
+print('printing link5',link5)
 linklist.head.next = link2
 link2.next = link3
 link3.next = link4
@@ -106,5 +114,5 @@ link4.next = link5
 # linklist.insert_end()
 # linklist.insert_beginning()
 linklist.get_count()
-linklist.insert_at_pos(3,14)
-# linklist.del_node(30)
+# linklist.insert_at_pos(3,14)
+linklist.del_node(link2)

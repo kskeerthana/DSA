@@ -40,8 +40,6 @@ class PQ:
         print(self.items)
         return return_value
         
-
-
 PriorityQ = PQ()
 PriorityQ.insert(9)
 PriorityQ.insert(5)

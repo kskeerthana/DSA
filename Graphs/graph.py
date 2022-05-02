@@ -1,6 +1,6 @@
 import heapq
 import sys
-from disjoint import disjontTree
+# from disjoint import disjontTree
 
 class Vertex:
     def __init__(self,node):

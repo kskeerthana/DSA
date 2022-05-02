@@ -72,7 +72,7 @@ class Graph:
             raise Exception("graph has a cycle")
         while(len(topoSortList)):
             node = topoSortList.pop(0)
-            print('printing sorted list',node.getVertexID())  
+            print('printing sorted list',node.getVertexID())        
 
 g = Graph()
 g.addVertex(5)

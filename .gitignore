@@ -1,0 +1,6 @@
+# ignore all files ending with ~
+*.pyc
+*.log
+*.*~
+*.*#
+.vscode/launch.json

@@ -54,3 +54,13 @@ def lengthOfLongestSubstring(s):
     return res
     
 print(lengthOfLongestSubstring("156888011065"))
+
+
+
+
+# arr = {} #empty dictionary
+# for i in range(len(nums)): 
+#   difference = target - nums[i] #loop to check the differnce for each indeces
+#   if difference in arr: #if the difference no will be present in the dictionary
+#      return [arr[difference], i] #it will return the indexes for the target sum
+#   arr[nums[i]] = i

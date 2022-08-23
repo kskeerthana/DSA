@@ -227,13 +227,14 @@ if __name__ == '__main__':
     # G.addEdge('c','d',4)
     # G.addEdge('d','e',4)
     # G.addEdge('e','f',1)
+    G.BFSTraversal('a')
     # G.DFSTraversal()
     # for value in G:
     #     G.dijkstra(value)
     # print(G.verticesdict.keys(),dir(G.verticesdict.values()))
     # for value in G:
     #     G.prims(value)
-    G.kruskal()
+    # G.kruskal()
     # print('Graph data:')
     # print(G.getEdges())
     # https://medium.com/survata-engineering-blog/monitoring-memory-usage-of-a-running-python-program-49f027e3d1ba
